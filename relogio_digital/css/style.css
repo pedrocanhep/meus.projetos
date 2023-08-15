@@ -1,0 +1,52 @@
+@charset "UTF-8"; /* compatibilizando o charset */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Source+Code+Pro:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(290deg, #090909, #171717);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    border-radius: 12px;
+    background-color: #121212;
+    box-shadow: 3px 5px 7px #151515;
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #efefef;
+    background-color: rgba(05, 05, 05, .75);
+    box-shadow: 1px 2px 5px rgba(05, 05, 05, 0.9);
+    border-radius: 3px;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.relogio span.tempo {
+    font-size: 15px;
+    font-weight: 400;
+}
