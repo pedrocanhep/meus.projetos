@@ -19,7 +19,7 @@
 
                 <div class="base">
                     <label for="ipeso">Peso em Kg</label>
-                    <div>
+                    <div class="inputs">
                         <i class="fa-solid fa-weight-scale"></i>
                         <input type="number" name="peso" id="ipeso" required>
                         <span>Kg</span>
@@ -28,24 +28,28 @@
 
                 <div class="base">
                     <label for="ialt">Altura em metros</label>
-                    <div>
+                    <div class="inputs">
                         <i class="fa-solid fa-ruler"></i>
                         <input type="number" name="altura" id="ialt" required>
                         <span>m</span>
                     </div>
                 </div>
 
-                <button id="calc">Calcular</button>
-                <input type="reset" value="Limpar">
+                <div id="botoes">
+                    <button>Calcular</button>
+                    <input type="reset" value="Limpar">
+                </div>
             </form>
 
-            <div id="infos">
+            <div id="infos" class="hidden">
                 <div id="resultado">
-                    <div>
-                        <span></span>
+                    <div id="imc">
                         <span>Seu IMC</span>
+                        <span id="valor">17</span>
                     </div>
-                    <div></div>
+                    <div id="descricao">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta corporis necessitatibus odit temporibus officiis natus, laboriosam id in laudantium minus recusandae magni praesentium, omnis illum, tenetur itaque aliquam harum facilis!</span>
+                    </div>
                 </div>
 
                 <div id="mais_info">
